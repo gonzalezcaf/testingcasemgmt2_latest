@@ -5,21 +5,17 @@ package com.learning.testingcasemgmt2;
  */
 
 @javax.persistence.Entity
-public class Solicitud extends org.drools.persistence.jpa.marshaller.VariableEntity implements java.io.Serializable {
+public class Solicitud
+		extends
+			org.drools.persistence.jpa.marshaller.VariableEntity
+		implements
+			java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Description("Numero de solicitud de prestamo")
-	@org.kie.api.definition.type.Label("Id Solicitud")
 	private java.lang.Integer idSolicitud;
-	@org.kie.api.definition.type.Description("Monto de dinero solicitado")
-	@org.kie.api.definition.type.Label("Monto Solicitado")
 	private java.lang.Integer monto;
-	@org.kie.api.definition.type.Description("Monto Final Aprobado")
-	@org.kie.api.definition.type.Label("Monto Aprobado")
 	private java.lang.Integer montoaprobado;
-	@org.kie.api.definition.type.Description("Llave principal para persistencia de datos en db externa")
-	@org.kie.api.definition.type.Label("id")
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "SOLICITUD_ID_GENERATOR")
 	@javax.persistence.Id
 	@javax.persistence.SequenceGenerator(name = "SOLICITUD_ID_GENERATOR", sequenceName = "SOLICITUD_ID_SEQUENCE")
