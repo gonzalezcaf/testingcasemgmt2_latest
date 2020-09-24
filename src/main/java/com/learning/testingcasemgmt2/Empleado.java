@@ -33,5 +33,13 @@ public class Empleado implements java.io.Serializable {
 	public Empleado(java.lang.String nombre) {
 		this.nombre = nombre;
 	}
+	
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
 }
