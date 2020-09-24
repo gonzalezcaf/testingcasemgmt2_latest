@@ -4,6 +4,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/prestamoDS</jta-data-source>
         <class>com.learning.testingcasemgmt2.Solicitud</class>
+        <class>org.drools.persistence.jpa.marshaller.MappedVariable</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
