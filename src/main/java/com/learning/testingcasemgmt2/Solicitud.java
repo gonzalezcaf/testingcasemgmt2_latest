@@ -5,7 +5,7 @@ package com.learning.testingcasemgmt2;
  */
 
 @javax.persistence.Entity
-public class Solicitud implements java.io.Serializable {
+public class Solicitud extends org.drools.persistence.jpa.marshaller.VariableEntity implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
