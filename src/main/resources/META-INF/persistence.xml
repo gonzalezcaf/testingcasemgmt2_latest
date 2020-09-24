@@ -3,7 +3,6 @@
     <persistence-unit name="testingcasemgmt2-pu" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <jta-data-source>java:jboss/datasources/prestamoDS</jta-data-source>
-        <class>com.learning.testingcasemgmt2.Empleado</class>
         <class>com.learning.testingcasemgmt2.Solicitud</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
