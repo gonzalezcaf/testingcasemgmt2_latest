@@ -5,6 +5,7 @@ package com.learning.testingcasemgmt2;
  */
 
 @javax.persistence.Entity
+@javax.persistence.Table(name = "Empleado")
 public class Empleado implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
