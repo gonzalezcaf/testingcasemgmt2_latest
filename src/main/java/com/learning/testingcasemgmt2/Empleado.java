@@ -16,7 +16,7 @@ public class Empleado implements java.io.Serializable {
 	@org.kie.api.definition.type.Label(value = "id")
     @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "EMPLEADO_ID_GENERATOR")
     @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "EMPLEADO_ID_GENERATOR", sequenceName = "EMPLEADO_ID_SEQUENCE")
+    @javax.persistence.SequenceGenerator(name = "EMPLEADO_ID_GENERATOR", sequenceName = "EMPLEADO_ID_SEQ")
 	private java.lang.Long id;
 
 	public Empleado() {
