@@ -30,10 +30,6 @@ public class Empleado implements java.io.Serializable {
 		this.nombre = nombre;
 	}
 
-	public Empleado(java.lang.String nombre) {
-		this.nombre = nombre;
-	}
-	
 	public java.lang.Long getId() {
 		return this.id;
 	}
