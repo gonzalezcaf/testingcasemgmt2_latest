@@ -41,4 +41,9 @@ public class Empleado implements java.io.Serializable {
 	public void setId(java.lang.Long id) {
 		this.id = id;
 	}
+	
+	public Empleado(java.lang.String nombre, java.lang.Long id) {
+        this.nombre = nombre;
+        this.id = id;
+    }
 }
