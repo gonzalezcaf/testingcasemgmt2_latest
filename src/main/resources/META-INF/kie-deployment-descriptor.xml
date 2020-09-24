@@ -16,6 +16,11 @@
             <identifier>new org.jbpm.document.marshalling.DocumentMarshallingStrategy();</identifier>
             <parameters/>
         </marshalling-strategy>
+        <marshalling-strategy>
+            <resolver>mvel</resolver>
+            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("testingcasemgmt2-pu", classLoader);</identifier>
+            <parameters/>
+        </marshalling-strategy>
     </marshalling-strategies>
     <event-listeners/>
     <task-event-listeners/>
