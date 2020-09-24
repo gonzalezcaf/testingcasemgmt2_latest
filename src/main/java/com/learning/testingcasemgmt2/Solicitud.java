@@ -13,13 +13,14 @@ public class Solicitud
 
 	static final long serialVersionUID = 1L;
 
-	private java.lang.Integer idSolicitud;
-	private java.lang.Integer monto;
-	private java.lang.Integer montoaprobado;
 	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "SOLICITUD_ID_GENERATOR")
 	@javax.persistence.Id
-	@javax.persistence.SequenceGenerator(name = "SOLICITUD_ID_GENERATOR", sequenceName = "SOLICITUD_ID_SEQUENCE")
+	@javax.persistence.SequenceGenerator(sequenceName = "SOLICITUD_ID_SEQ", name = "SOLICITUD_ID_GENERATOR")
 	private java.lang.Long id;
+	
+    private java.lang.Integer idSolicitud;
+	private java.lang.Integer monto;
+	private java.lang.Integer montoaprobado;
 
 	public Solicitud() {
 	}
