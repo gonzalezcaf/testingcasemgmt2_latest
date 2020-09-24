@@ -9,17 +9,23 @@ public class Empleado implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
-	@org.kie.api.definition.type.Label("Nombre")
-	private java.lang.String nombre;
-	
-	@org.kie.api.definition.type.Description(value = "Llave principal para persistencia de datos en db externa")
-	@org.kie.api.definition.type.Label(value = "id")
     @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "EMPLEADO_ID_GENERATOR")
     @javax.persistence.Id
     @javax.persistence.SequenceGenerator(name = "EMPLEADO_ID_GENERATOR", sequenceName = "EMPLEADO_ID_SEQ")
 	private java.lang.Long id;
 
+	@org.kie.api.definition.type.Label("Nombre")
+	private java.lang.String nombre;
+
 	public Empleado() {
+	}
+
+	public java.lang.Long getId() {
+		return this.id;
+	}
+
+	public void setId(java.lang.Long id) {
+		this.id = id;
 	}
 
 	public java.lang.String getNombre() {
@@ -30,16 +36,8 @@ public class Empleado implements java.io.Serializable {
 		this.nombre = nombre;
 	}
 
-	public java.lang.Long getId() {
-		return this.id;
-	}
-
-	public void setId(java.lang.Long id) {
+	public Empleado(java.lang.Long id, java.lang.String nombre) {
 		this.id = id;
+		this.nombre = nombre;
 	}
-	
-	public Empleado(java.lang.String nombre, java.lang.Long id) {
-        this.nombre = nombre;
-        this.id = id;
-    }
 }
