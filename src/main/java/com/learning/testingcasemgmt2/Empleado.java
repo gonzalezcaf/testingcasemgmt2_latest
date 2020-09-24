@@ -6,12 +6,24 @@ package com.learning.testingcasemgmt2;
 
 public class Empleado implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    public Empleado() {
-    }
+	@org.kie.api.definition.type.Label(value = "Nombre")
+	private java.lang.String nombre;
 
+	public Empleado() {
+	}
 
+	public java.lang.String getNombre() {
+		return this.nombre;
+	}
 
+	public void setNombre(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Empleado(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
 
 }
