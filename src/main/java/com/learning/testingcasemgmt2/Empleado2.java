@@ -7,29 +7,38 @@ package com.learning.testingcasemgmt2;
 @javax.persistence.Entity
 public class Empleado2 implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "EMPLEADO2_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "EMPLEADO2_ID_GENERATOR", sequenceName = "EMPLEADO2_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "EMPLEADO2_ID_GENERATOR")
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "EMPLEADO2_ID_GENERATOR", sequenceName = "EMPLEADO2_ID_SEQ")
+	private java.lang.Long id;
 
-    public Empleado2() {
-    }
-    
-    public Empleado2(java.lang.Long id) {
-        this.id = id;
-    }
+	@org.kie.api.definition.type.Label(value = "nombre")
+	private java.lang.String nombre;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	public Empleado2() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
 
+	public java.lang.String getNombre() {
+		return this.nombre;
+	}
+
+	public void setNombre(java.lang.String nombre) {
+		this.nombre = nombre;
+	}
+
+	public Empleado2(java.lang.Long id, java.lang.String nombre) {
+		this.id = id;
+		this.nombre = nombre;
+	}
 
 }
