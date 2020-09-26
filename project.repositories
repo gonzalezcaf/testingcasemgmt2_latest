@@ -4,7 +4,7 @@
       <include>true</include>
       <metadata>
         <id>local</id>
-        <url>/opt/rh/pam78/repositories</url>
+        <url>/home/abhumbe/.m2/repository</url>
         <source>LOCAL</source>
       </metadata>
     </repository>
