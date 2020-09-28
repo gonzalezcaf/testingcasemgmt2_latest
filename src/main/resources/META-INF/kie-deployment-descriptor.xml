@@ -18,7 +18,7 @@
         </marshalling-strategy>
         <marshalling-strategy>
             <resolver>mvel</resolver>
-            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("testingcasemgmt2-pu", classLoader);</identifier>
+            <identifier>new org.jbpm.casemgmt.impl.marshalling.CaseMarshallerFactory.builder(classLoader).withDoc().withJpa("testPU").toString();</identifier>
             <parameters/>
         </marshalling-strategy>
     </marshalling-strategies>
