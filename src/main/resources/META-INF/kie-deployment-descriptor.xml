@@ -11,11 +11,6 @@
             <identifier>org.jbpm.casemgmt.impl.marshalling.CaseMarshallerFactory.builder(classLoader).withDoc().withJpa("testingcasemgmt2-pu").get();</identifier>
             <parameters/>
         </marshalling-strategy>
-        <marshalling-strategy>
-            <resolver>mvel</resolver>
-            <identifier>org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("testingcasemgmt2-pu", classLoader);</identifier>
-            <parameters/>
-        </marshalling-strategy>
     </marshalling-strategies>
     <event-listeners/>
     <task-event-listeners/>
